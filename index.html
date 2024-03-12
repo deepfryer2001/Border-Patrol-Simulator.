@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>Border Patrol Simulator</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body id="body">
+    <style>
+body {
+  position: relative;
+  background-size: cover;
+  background-image: url(pagebackground.png);
+}
+p {
+  background-color: aquamarine;
+  border: 5px solid black;
+  font-family: verdana;
+  text-align: center;
+  border-radius: 20px;
+}
+.stats { 
+  display: inline-block;
+  font-size: 25px;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  inline-size: 250px;
+ }
+#canvas {
+  border: 10px solid black;
+  border-radius: 30px;
+  margin-left: 315px;
+  margin-right: auto;
+  display: inline-block;
+ }
+ .controls {
+  font-size: small;
+  display: inline-block;
+  position: absolute;
+  top: 260px;
+  left: -2.5px;
+  inline-size: 300px;
+ }
+ .powerups {
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  display: inline-block;
+  font-size: 15px;
+  inline-size: 400px;
+ }
+ .title {
+  display: inline-block;
+  position: absolute;
+  inline-size: 350px;
+  top: 0px;
+  right: 30px;
+  font-size: 50px;
+  color: black;
+  letter-spacing: 3.5px;
+ }
+ #spunckbob {
+  position: absolute;
+ left: 0px;
+ top: 440px;
+ height: 130px;
+ width: 300px;
+ border: 5px solid black;
+ }
+ .youredone {
+  position: absolute;
+  left: 50px;
+  top: 210px;
+  height: 50px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 30px;
+  background-color: lime;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+ }
+</style>
+  <canvas id="canvas" height=550px width=600px></canvas>
+  <div class=stats>
+  <p id="highscore">High Score: 0</p>
+  <p id="currentspeed"></p>
+  </div>
+  <img id="spunckbob" src="cattershitter.png"/> 
+</br>
+<p class="controls">Controls:</br> Left and right to move. </br> Space to dash and continue. </br>
+R to self-destruct. </br> Press 1-3 while dead or on title screen to change the </br>
+background. </br> 
+Go through one side to come out the other. </br>
+Press F for fullscreen.
+</p>
+<p class="title">Border Patrol </br> Simulator</p>
+<p class="powerups"> Power Ups: </br> 
+  Jesus Christ: Gives you 2 dashes. </br>
+  Daniel Wilson: Doubles points gained for 8 seconds. </br>
+  Lobotomy: Slows the mexicans for 8 seconds. </br></br>
+  Power Downs: </br>
+  Kinglsey Damilola Adegbehingbe: Jaiden Animations </br>
+  Catterpillar: I forgor💀 </br>
+  what the fuck: Takes away a dash. (Jumpscare Warning)
+</p>
+<button class='youredone' id="badbuttonlmao">Click for Free Robux!</button>
+<script src="canvas.js"></script>
+<script src="webpage.js"></script>
+</body>
+</html>
